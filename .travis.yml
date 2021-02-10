@@ -16,7 +16,5 @@ install:
 script:
   - cd decide
   - coverage run --branch --source=. ./manage.py test store --keepdb
-  - coverage xml
-  - python-codacy-coverage -r coverage.xml
 on: 
-  branches: master
+  branch: master
