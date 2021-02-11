@@ -154,7 +154,17 @@ STATIC_URL = '/static/'
 KEYBITS = 256
 
 BASEURL="https://emicolalc-1730.herokuapp.com"
-APIS={}
+APIS={
+    'authentication': BASEURL,
+    'base': BASEURL,
+    'booth': BASEURL,
+    'census': BASEURL,
+    'mixnet': BASEURL,
+    'postproc': BASEURL,
+    'store': BASEURL,
+    'visualizer': BASEURL,
+    'voting': BASEURL,
+}
 try:
     from local_settings import *
 except ImportError:
