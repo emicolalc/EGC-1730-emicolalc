@@ -68,6 +68,7 @@ MODULES = [
     'voting',
 ]
 
+BASEURL = 'http://localhost:8000'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -151,10 +152,9 @@ STATIC_URL = '/static/'
 
 # number of bits for the key, all auths should use the same number of bits
 KEYBITS = 256
+
+BASEURL="https://emicolalc-1730.herokuapp.com/"
 APIS={}
-BASEURL="https://emicolalc-1730.herokuapp.com"
-
-
 try:
     from local_settings import *
 except ImportError:
